@@ -10,27 +10,28 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dio: 5.3.3
-  file_picker: 5.3.3
-  get: 4.6.6
-  oktoast: 3.3.1
-  path_provider: 2.1.0
+  dio: ^5.4.3+1
+  file_picker: ^8.0.3
+  get: ^4.6.6
+  oktoast: ^3.4.0
+  path_provider: ^2.1.3
   log_wrapper:
     git:
       url: https://github.com/flutter-packagist/log_wrapper.git
-      ref: 1.0.2
+      ref: 1.0.3
   mvc:
     git:
       url: https://github.com/flutter-packagist/mvc.git
-      ref: 1.0.6
+      ref: 1.0.8
   network:
     path: ../
+
+dependency_overrides:
+  web: ^0.5.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
 
 flutter:
-
   uses-material-design: true
