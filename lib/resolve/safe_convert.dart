@@ -43,7 +43,9 @@ String toString(value, {String defaultValue = ""}) {
 
 Map<String, dynamic> toMap(value, {Map<String, dynamic>? defaultValue}) {
   if (value == null) return defaultValue ?? <String, dynamic>{};
-  if (value is Map<String, dynamic>) return value;
+  if (value is Map || value is Map<String, dynamic>) {
+    return Map<String, dynamic>.from(value);
+  }
   return defaultValue ?? <String, dynamic>{};
 }
 
