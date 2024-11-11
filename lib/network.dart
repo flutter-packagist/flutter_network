@@ -1,3 +1,5 @@
+library packagist_network;
+
 export 'adapter/dio_adapter.dart';
 export 'interceptor/cancel_interceptor.dart';
 export 'interceptor/log_interceptor.dart';

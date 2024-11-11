@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:log_wrapper/log/log.dart';
-import 'package:network/network.dart';
+
+import '../request/http_request.dart';
 
 /// ==============================================================
 /// 拦截器：取消网络请求

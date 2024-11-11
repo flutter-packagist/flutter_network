@@ -4,8 +4,8 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart' hide MultipartFile;
 import 'package:log_wrapper/log/log.dart';
-import 'package:mvc/base/base_controller.dart';
-import 'package:network/network.dart';
+import 'package:packagist_mvc/base/base_controller.dart';
+import 'package:packagist_network/network.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:path_provider/path_provider.dart';
 

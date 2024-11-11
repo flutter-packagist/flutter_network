@@ -1,5 +1,5 @@
 import "package:flutter_test/flutter_test.dart";
-import "package:network/resolve/safe_convert.dart";
+import "package:packagist_network/resolve/safe_convert.dart";
 
 void main() {
   test("convert dynamic to safe type", () {
