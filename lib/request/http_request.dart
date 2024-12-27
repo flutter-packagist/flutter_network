@@ -398,7 +398,7 @@ extension FutureCallback<T> on Future<Response<T>> {
     OnFailed? onFailed,
     OnCommon? onCommon,
   ) async {
-    return then(
+    await then(
       (response) {
         onCommon?.call();
         onSuccess?.call(_responseToMap(response));
@@ -408,6 +408,7 @@ extension FutureCallback<T> on Future<Response<T>> {
         _handleError(onFailed, exception: error);
       },
     );
+    return this;
   }
 
   /// 异常处理<br/>

@@ -15,7 +15,7 @@ class AppService {
     usePathUrlStrategy();
 
     /// 初始化网络请求
-    HttpRequest().init(HttpRequestSetting(baseUrl: "http://192.168.2.117:8080/"));
+    HttpRequest().init(HttpRequestSetting(baseUrl: "http://192.168.2.33:8080/"));
     HttpRequest().client?.interceptors.addAll([
       RetryInterceptor(dio: HttpRequest().client!),
       LogInterceptor(),

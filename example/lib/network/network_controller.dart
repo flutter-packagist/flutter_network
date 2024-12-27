@@ -72,7 +72,7 @@ extension Network on NetworkController {
   /// 网络请求未绑定当前控制器，当控制器销毁时，不会自动取消网络请求
   Future get() async {
     await Future.delayed(const Duration(milliseconds: 200), () {});
-    await HttpRequest().get(
+    dynamic result = await HttpRequest().get(
       'get',
       onSuccess: (data) {
         showToast("请求成功: ${data.toString()}");
@@ -81,6 +81,7 @@ extension Network on NetworkController {
         logE('code: $code, msg: $error');
       },
     );
+    logD('result: $result');
   }
 
   /// 网络请求绑定当前控制器，当控制器销毁时，会自动取消网络请求

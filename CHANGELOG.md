@@ -1,3 +1,7 @@
+## 1.2.3
+
+* fixed: HttpRequest请求的Future值不返回数据
+
 ## 1.2.2
 
 * fixed: 修复toMap类型转换失败问题
